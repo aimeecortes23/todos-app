@@ -1,0 +1,12 @@
+<h1>All Subtasks</h1>
+
+<table>
+  <% @subtasks.all.each do |subtask| %>
+  <tr>
+    <td><%= link_to subtask.title, subtask_path(subtask) %></td>
+    <td><%= subtask.priority %></td>
+
+  </tr>
+
+  <% end %>
+</table>

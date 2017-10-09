@@ -1,0 +1,8 @@
+<h1>new subtask</h1>
+
+<%= form_for @subtask do |subtask| %>
+  <p><%= subtask.text_field :title %></p>
+  <p><%= subtask.text_field :priority %></p>
+
+  <p><%= subtask.submit %></p>
+<% end %>

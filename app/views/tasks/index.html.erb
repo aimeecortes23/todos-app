@@ -1,0 +1,13 @@
+<h1>All Tasks</h1>
+
+
+  <% @tasks.all.each do |task| %>
+  <div class="well">
+    <p><%= link_to task.title, task_path(task) %></p>
+  </div>
+
+  <% end %>
+
+  <div class="well">
+    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+  </div>
